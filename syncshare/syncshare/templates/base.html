@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  {% load staticfiles %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sync Share</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "css/gridpak.css" %}">
+    <link rel="stylesheet" href="{% static "css/syncshare.css" %}">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col span_24">
+            <a class="brand-app" href="/"><img class="logo" src="{% static "img/logo.png" %}" alt="logo">Sync Share</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% block photos %}{% endblock %}
+    {% block videos %}{% endblock %}
+    {% block files %}{% endblock %}
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col span_24">
+            <p>&copy; {% now "Y" %} John Murphy | murph</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{% static "js/masonry.pkgd.min.js" %}"></script>
+    <script src="{% static "js/imagesloaded.pkgd.min.js" %}"></script>
+    <script src="{% static "js/syncshare.js" %}"></script>
+  </body>
+</html>

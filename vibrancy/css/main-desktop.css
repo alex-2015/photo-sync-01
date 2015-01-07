@@ -1,0 +1,70 @@
+/* over 1024px */
+@media screen and (min-width: 64em) {
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		GLOBAL
+	    ....................................  */
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 1
+	    ....................................  */
+
+	#vibrancy-studios h1 {
+		font-size: 10.5rem;
+		letter-spacing: 3px;
+	}
+
+	#vibrancy-studios h2 {
+		letter-spacing: 2px;
+	}
+
+	div#vibrancy-clients p {
+		font-size: 1.5rem;
+		margin-bottom: 2.95rem;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+	    Stage 4 - Apps
+	    ....................................  */
+
+	.stage-apps div.viewport section [data-id="1-1"] {
+		font-size: 3.5rem;
+		max-width: 46%;
+	}
+
+	.stage-apps div.viewport section [data-id="5-1"] {
+		width: 65%;
+	}
+
+	.stage-apps div.viewport section [data-id="5-2"] {
+		font-size: 3rem;
+	}
+
+	.stage-apps div.viewport section [data-id="8-1"] {
+		font-size: 2.25rem;
+		bottom: 75%;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+	    Stage 8 - Join the Family
+	    ....................................  */
+
+	.stage-joinfamily .mini-slider ul:first-of-type {
+		font-size: 2.5rem;
+	}
+
+	.stage-joinfamily .mini-slider ul:first-of-type li .row-creative {
+		width: 70%;
+	}
+
+	.stage-joinfamily .mini-slider ul:first-of-type li .row-qualities span.separator {
+		display: inline-block;
+		height: .75rem;
+		width: .75rem;
+	}
+
+}

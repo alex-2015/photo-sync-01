@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Login\LoginBundle\Entity\Dictionary" table="dictionary">
+    <indexes>
+      <index name="comm_id" columns="comm_id"/>
+    </indexes>
+    <id name="dicId" type="integer" column="dic_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="dicName" type="string" column="dic_name" length="50" nullable="false"/>
+    <field name="dicFontName" type="string" column="dic_font_name" length="50" nullable="false"/>
+    <field name="dicCreator" type="integer" column="dic_creator" nullable="false"/>
+    <field name="dicUpdatedtime" type="datetime" column="dic_updatedTime" nullable="false"/>
+    <many-to-one field="comm" target-entity="Community">
+      <join-columns>
+        <join-column name="comm_id" referenced-column-name="comm_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

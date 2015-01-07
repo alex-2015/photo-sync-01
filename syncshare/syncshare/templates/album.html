@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load imagefit %}
+{% block photos %}
+{% if albums %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col span_24">
+        <h2>Photo Albums / {% for album in albums %}{% if request.path|cut:"/"|cut:"albums" == album.slug %}{{ album.name }}{% endif %}{% endfor %}</h2>
+      </div>
+    </div>
+    <div class="row masonry-effect">
+      <div class="grid-sizer"></div>
+      <div class="gutter-sizer"></div>
+      {% for album in albums %}
+      {% if request.path|cut:"/"|cut:"albums" == album.slug %}
+      {% for picture in album.picture_set.all %}
+      <div class="image-block">
+        <a href="/{{ picture.path }}" download>
+          <img src="{{ picture.path|resize:'400x600' }}">
+        </a>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sample</title>
+    <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="popc.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+    //Chat translate example
+    var req = translate(
+            '{"api_key":"12yui3244",' +
+                    '"correlation_id":"123", ' +
+                    '"message": "puri", ' +
+                    '"sender_communityId" :"1", ' +
+                    '"sender_dictionaryId" : "1", ' +
+                    '"receiver_communityId" :"3", ' +
+                    '"receiver_dictionaryId": "2", ' +
+                    '"time" : "12222222"}', "chat");
+
+    //Get communities example
+    getCommunities('{"api_key":"12yui3244"}', 'communities');
+
+    //Getting dictionaries by community Id, On change event of community drop down
+    $(function(){
+        $("#comm").change(function(e){
+            var param = '{"api_key":"12yui3244", "community":"'+this.value+'"}';
+            getDictionaries(param, "dictionaries");
+        });
+    })
+</script>
+
+
+<h3>Translated word</h3>
+<div id="imageDiv">Translated word loading...</div>
+
+<hr>
+
+<h3>Community list</h3>
+<select id="comm">
+    <option selected>Select community</option>
+</select>
+
+<hr>
+
+<h3>Dictionary list</h3>
+<select id="dict"></select>
+
+</body>
+</html>

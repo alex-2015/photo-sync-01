@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Login/LoginBundle/Entity/User.php</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Login/LoginBundle/Controller/DefaultController.php</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Community/CommunityBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Dictionary/DictionaryBundle/Controller/DefaultController.php</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Login/LoginBundle/Resources/config/routing.yml</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Login/LoginBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Login/LoginBundle/Resources/views/Default/welcome.html.twig</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Community/CommunityBundle/Resources/config/routing.yml</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Dictionary/DictionaryBundle/Resources/config/routing.yml</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Login/LoginBundle/Resources/views/Default/login.html.twig</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Dictionary/DictionaryBundle/Resources/views/Default/addDictionary.html.twig</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Login/LoginBundle/Entity/Dictionary.php</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/app/config/parameters.yml</file>
+            <file>file:/D:/xampp/htdocs/LoginSample/src/Community/CommunityBundle/Controller/DefaultController.php</file>
+        </group>
+    </open-files>
+</project-private>

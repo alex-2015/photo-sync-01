@@ -1,0 +1,22 @@
+{% extends "LoginLoginBundle:Default:index.html.twig" %}
+
+{% block stylesheets %}
+    <link href="{{asset('bundles/loginlogin/css/parsley/parsley.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block container %}
+
+    <form class="form-signin" role="form" method="POST" action="{{path('login_login_signup')}}" data-parsley-validate>
+        <h2 class="form-signin-heading">Sign up for POPC</h2>
+        <label for="inputUsername" class="sr-only">User name</label>
+        <input name="username" type="text" id="inputUsername" class="form-control" placeholder="Username" required data-parsley-trigger="change" autofocus>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required data-parsley-trigger="change">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required data-required="true" data-trigger="change">
+        <label for="inputRePassword" class="sr-only">Re-type Password</label>
+        <input name="re-password" type="password" id="inputPassword" class="form-control" placeholder="Re-type Password" required data-required="true" data-trigger="change">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      </form>
+    
+{% endblock %}

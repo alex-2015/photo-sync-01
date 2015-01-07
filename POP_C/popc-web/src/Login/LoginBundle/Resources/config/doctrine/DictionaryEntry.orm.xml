@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Login\LoginBundle\Entity\DictionaryEntry" table="dictionary_entry">
+    <indexes>
+      <index name="dic_id" columns="dic_id"/>
+    </indexes>
+    <id name="dicEnId" type="integer" column="dic_en_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="dicEnWord" type="string" column="dic_en_word" length="50" nullable="false"/>
+    <field name="dicEnKey" type="string" column="dic_en_key" length="50" nullable="false"/>
+    <field name="dicEnNative" type="string" column="dic_en_native" length="50" nullable="false"/>
+    <field name="dicEnEnglish" type="string" column="dic_en_english" length="50" nullable="false"/>
+    <field name="dicEnCreator" type="integer" column="dic_en_creator" nullable="false"/>
+    <field name="dicEnCreatedtime" type="datetime" column="dic_en_createdTime" nullable="false"/>
+    <many-to-one field="dic" target-entity="Dictionary">
+      <join-columns>
+        <join-column name="dic_id" referenced-column-name="dic_id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

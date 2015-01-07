@@ -1,0 +1,104 @@
+{% extends "LoginLoginBundle:Default:welcome.html.twig" %}
+
+{% block container %}
+    
+    {% block propic %}
+     <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-3 col-md-2 sidebar">
+            
+       <div class="nav nav-sidebar row">
+        <div>
+            <div class="thumbnail">
+                <img data-src="holder.js/180x200" alt="...">
+      
+            </div>
+        </div>
+    </div>
+    
+      {% endblock %}  
+       
+     {% block side_navbar %}       
+          <ul class="nav nav-sidebar">
+            <li><a href="{{path('login_login_homepage')}}">Overview <span class="sr-only">(current)</span></a></li>
+            <ul>
+                <li>Reports</li>
+                <li>Analytics</li>
+                <li>Export</li>
+            </ul>
+          
+            <li><a href="{{path('community_community_index')}}">Community Manager</a></li>
+            <ul>
+                <li>Community Update</li>
+                <li>Community Delete</li>
+                <li>Communit Search</li>
+            </ul>
+            
+            <li class="active"><a href="{{path('dictionary_dictionary_index')}}">Dictionary Manager<span class="sr-only">(current)</span></a></li>
+            <ul>
+                <li>Dictionary Update</li>
+                <li>Dictionary Delete</li>
+                <li>Dictionary Search</li>
+            </ul>
+          </ul>
+        </div>
+            
+        {% endblock %}
+        
+        {% block canvas %}
+       <br>           
+       <div class="panel panel-default col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-3 ">
+            <div class="panel-heading">
+              <h3 class="panel-title">Dictionary Update</h3>
+            </div>
+            <div class="panel-body">
+                <form action="">
+                    Dictionary Id:<br>
+                    <input type="text" name="dictionaryIdUpd" >
+                    <br>
+                    Dictionary name:<br>
+                    <input type="text" name="dictionaryId" >
+                    <br>
+                    Font name:<br>
+                    <input type="text" name="fontName" >
+                    <br>
+                    Font size:<br>
+                    <input type="text" name="fontSize" >
+                    <br><br>
+                    <input type="submit" value="Update">
+                 </form> 
+            </div>
+          </div>
+            <br>
+         <div class="panel panel-default col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-3 ">
+            <div class="panel-heading">
+              <h3 class="panel-title">Dictionary delete</h3>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                    Dictionary Id:<br>
+                    <input type="text" name="dictionaryIdDel" >
+                    <br><br>
+                    <input type="submit" value="Delete">
+                 </form> 
+            </div>
+          </div>
+           <br>
+         <div class="panel panel-default col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-3 ">
+            <div class="panel-heading">
+              <h3 class="panel-title">Dictionary search</h3>
+            </div>
+            <div class="panel-body">
+              <form action="">
+                    Dictionary Id:<br>
+                    <input type="text" name="dictionaryId" >
+                    <br><br>
+                    <input type="submit" value="Search">
+                 </form> 
+            </div>
+          </div>
+        {% endblock %}
+        </div>
+    </div>
+    
+{% endblock %}

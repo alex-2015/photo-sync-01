@@ -1,0 +1,7 @@
+community_community_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: CommunityCommunityBundle:Default:index }
+
+community_community_index:
+    pattern: /community
+    defaults: { _controller: CommunityCommunityBundle:Default:communityManager }

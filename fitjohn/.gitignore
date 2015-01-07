@@ -1,0 +1,5 @@
+config/app.js
+config/database.js
+log.txt
+node_modules
+starter.sh

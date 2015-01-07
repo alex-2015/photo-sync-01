@@ -1,0 +1,21 @@
+<div class="pure-g">
+  <div class="pure-u-1">
+    <h1 class="mobile"><a ng-href="#/" ng-click="mobileToggle('off')">Fitore <span class="glyph heart fitore">&#xf004;</span><span class="glyph heart john">&#xf004;</span> John</a></h1>
+    <button class="mobile-menu-button" ng-if="mobileMenu.on" ng-click="mobileToggle()"><span class="glyph">&#xf0c9;</span></button>
+    <nav ng-class="{'mobile-open': mobileMenu.open}">
+      <div ng-class="{'animated fadeInRight': mobileMenu.open}" class="wrapper">
+        <div class="left">
+          <a ng-href="#/our-story" ng-click="mobileToggle('off')">Our Story</a>
+          <a ng-href="http://fitoreandjohn.rsvpify.com" target="_blank" ng-click="mobileToggle('off')">RSVP</a>
+        </div>
+        <h1><a ng-href="#/" ng-click="mobileToggle('off')">Fitore <span class="glyph heart fitore">&#xf004;</span><span class="glyph heart john">&#xf004;</span> John</a></h1>
+        <div class="right">
+          <a ng-href="#/wedding-details" ng-click="mobileToggle('off')">Details</a>
+          <a ng-href="#/photos" ng-click="mobileToggle('off')">Photos</a>
+        </div>
+      </div>
+      <div class="overlay" ng-click="mobileToggle('off')"></div>
+    </nav>
+    <span class="mobile-check" mobile-check></span>
+  </div>
+</div>

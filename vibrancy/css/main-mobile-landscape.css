@@ -1,0 +1,90 @@
+/* over 568px */
+@media screen and (min-width: 35.5em) {
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		GLOBAL
+	    ....................................  */
+
+	    br.mobile {
+	    	display: none;
+	    }
+
+	    br.desktop {
+	    	display: block;
+	    }
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Menu
+	    ....................................  */
+
+	nav#main-nav {
+		max-width: 304px;
+	}
+
+
+
+	/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+		Modal Box
+	    ....................................  */
+
+	div.modal button.close.topright {
+		height: 42px;
+		line-height: 10px;
+		margin: 0;
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 1
+	    ....................................  */
+
+	.home-slide {
+		height: 401px;
+	}
+
+	#vibrancy-studios h1 {
+		font-size: 4rem;
+	}
+
+	#vibrancy-studios h2 {
+		font-size: 1.33rem;
+
+	}
+
+		#vibrancy-family p {
+			padding: 0 3em;
+		}
+
+	#slideshow-services {
+		margin: 0 auto 1.5em;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+	    Stage 4 - Apps
+	    ....................................  */
+
+	.stage-apps div.viewport section p {
+		font-size: 2.5rem;
+	}
+
+	
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 8 - Join the Family
+	    ....................................  */
+
+	.stage-joinfamily .mini-slider ul:first-of-type {
+		font-size: 1.5rem;
+	}
+
+
+
+}

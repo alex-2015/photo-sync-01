@@ -1,0 +1,247 @@
+{% extends "LoginLoginBundle:Default:index.html.twig" %}
+
+{% block stylesheets %}
+    <link href="{{asset('bundles/loginlogin/dashboard.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+      	
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        {% if name is defined %}
+          <a class="navbar-brand" href="#">Welcome {{name}} </a>
+        {% endif %}
+        </div>
+
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{path('login_login_homepage')}}">Dashboard</a></li>
+            <li><a href="{{path('login_login_settings')}}">Settings</a></li>
+            <li><a href="{{path('login_login_logout')}}">Sign Out</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+{% endblock %}
+
+
+{% block container %}
+    
+    {% block propic %}
+     <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-3 col-md-2 sidebar">
+            
+       <div class="nav nav-sidebar row">
+        <div>
+            <div class="thumbnail">
+                <img data-src="holder.js/180x200" alt="...">
+      
+            </div>
+        </div>
+    </div>
+    
+      {% endblock %}  
+       
+     {% block side_navbar %}       
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <ul>
+                <li>Reports</li>
+                <li>Analytics</li>
+                <li>Export</li>
+            </ul>
+          
+            <li><a href="{{path('community_community_index')}}">Community Manager</a></li>
+            <ul>
+                <li>Community Update</li>
+                <li>Community Delete</li>
+                <li>Communit Search</li>
+            </ul>
+            
+            <li><a href="{{path('dictionary_dictionary_index')}}">Dictionary Manager</a></li>
+            <ul>
+                <li>Dictionary Update</li>
+                <li>Dictionary Delete</li>
+                <li>Dictionary Search</li>
+            </ul>
+          </ul>
+        </div>
+            
+        {% endblock %}
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        {% block canvas %}
+                  
+        
+          <h1 class="page-header">COMMUNITIES</h1>
+          
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>1245</h4>
+              <span class="text-muted">SINHALA</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>2345</h4>
+              <span class="text-muted">TAMIL</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>3456</h4>
+              <span class="text-muted">ENGLISH</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>2413</h4>
+              <span class="text-muted">HINDI</span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">DICTIONARY</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Dictionary Entry Id</th>
+                  <th>Dictionary Id</th>
+                  <th> Word</th>
+                  <th>Key </th>
+                  <th>Native Word </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        
+        {% endblock %}
+        </div>
+        </div>
+    </div>
+    
+{% endblock %}

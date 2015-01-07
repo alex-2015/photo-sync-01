@@ -1,0 +1,688 @@
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    0. GRID
+    ......................................  */
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font: 1em/1.5 sans-serif;
+}
+
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.mobile-check {
+    position: relative;
+    z-index: 0;
+}
+
+@media screen and (min-width: 35.5em) {
+    .container {
+        width: 540px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .container {
+        width: 720px;
+        padding: 0;
+    }
+    .l-box {
+        padding: 0 2% 0 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .l-box:last-child {
+        padding-right: 0;
+    }
+    .mobile-check {
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .container {
+        width: 960px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .container {
+        width: 1200px;
+        padding: 0;
+    }
+}
+
+.clearfix:after,
+.pure-g:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    1. GLOBAL
+    ......................................  */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.60, #EBF3F3),
+        color-stop(1, #A0BDB8)
+    );
+    background-image: -o-linear-gradient(bottom, #EBF3F3 60%, #A0BDB8 100%);
+    background-image: -moz-linear-gradient(bottom, #EBF3F3 60%, #A0BDB8 100%);
+    background-image: -webkit-linear-gradient(bottom, #EBF3F3 60%, #A0BDB8 100%);
+    background-image: -ms-linear-gradient(bottom, #EBF3F3 60%, #A0BDB8 100%);
+    background-image: linear-gradient(to bottom, #EBF3F3 60%, #A0BDB8 100%);
+}
+
+html, .pure-g [class *= "pure-u"] {
+    font: 1em/1.5 'Lato', sans-serif;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    1. Typography
+    ......................................  */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+.glyph {
+    font: 1em 'FontAwesome';
+    text-transform: none;  
+    display: inline-block;
+    text-align: center;
+}
+
+span.glyph {
+    width: 1em;
+}
+
+h1, h2 {
+    font-family: 'Great Vibes', serif;
+    font-family: 'Parisienne';
+    font-weight: bold;
+}
+
+h2.page-title { 
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(50, 50, 50);
+}
+
+h2.page-title:before,
+h2.page-title:after {
+    content: "";
+    margin: 0 .5rem;
+    display: inline-block;
+    width: 2rem;
+    height: .5rem;
+    border-top: 1px solid rgb(153,153,153);
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Lato', serif;
+    font-weight: bold;
+}
+
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: inherit;
+}
+
+a {
+    color: #717248;
+    border-color: #717248;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.pure-button-secondary {
+    background-color: #7e7f5f;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+a:not(.pure-button):hover {
+    color: #222;
+}
+
+a:hover {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a.button {
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: .5em 2em;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a.button:hover {
+    background: #16a085;
+    color: #fff;
+}
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    2. HEADER
+    ......................................  */
+
+header {
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: left;
+}
+
+    header h1 a:hover span.heart {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    header h1 a:hover span.heart.fitore {
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+    }
+
+    header h1 a:hover span.heart.john {
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+    }
+
+    header h1 a span.heart {
+        font-size: 75%;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    header h1 a span.heart.fitore {
+        color: #f39c12;
+        color: #d7b091;
+        opacity: 0.8;
+    }
+
+    header h1 a span.heart.john {
+        color: #1abc9c;
+        color: #7e7f5f;
+        opacity: 0.8;
+        margin-left: -.5em;
+    }
+
+    header h1.mobile {
+        z-index: 2;
+        padding: 4px 0 4px 2%;
+        margin: 0;
+        text-align: left;
+        position: relative;
+        background: #fff;
+    }
+
+    header button.mobile-menu-button {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 3.5em;
+        padding: 0 2%;
+        text-align: right;
+        line-height: 4;
+        border: 0;
+        color: #333;
+        outline: 0;
+        z-index: 3;
+        background: none;
+    }
+
+    header button.mobile-menu-button:hover {
+        color: #717248;
+    }
+
+        header button.mobile-menu-button span {
+            font-size: 1.5em;
+        }
+
+    header nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        float: none;
+        z-index: 1;
+    }
+
+    header nav.mobile-open {
+        display: block;
+    }
+
+        header nav div.overlay {
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .7);
+        }
+
+        header nav div.wrapper {
+            z-index: 4;
+            background: #222;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: auto;
+            height: 100%;
+            padding-top: 4.5rem;
+            width: 85%;
+            max-width: 360px;
+            animation-duration: .25s;
+            -webkit-animation-duration: .25s;
+        }
+
+            header nav a {
+                border: none;
+                display: block;
+                border-radius: 0;
+                text-decoration: none;
+            }
+
+            header nav div > a {
+                text-transform: uppercase;
+                color: #fff;
+                padding: 1rem 2rem;
+                width: 100%;
+            }
+
+            header nav h1 {
+                display: none;
+            }
+
+            header nav div > a:not(.pure-button):hover {
+                color: #7e7f5f;
+            }
+
+@media screen and (min-width: 48em) {
+
+    header {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    header h1.mobile {
+        display: none;
+    }
+
+    header button.mobile-menu-button {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+        position: static;
+        background: none;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        z-index: 8;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    header nav div.wrapper {
+        width: 100%;
+        display: block;
+        max-width: none;
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        padding: 0;
+    }
+
+    header nav div.overlay {
+        display: none;
+    }
+
+    header nav a {
+        background: none;
+    }
+
+    header nav h1 {
+        margin: 0;
+        font-size: 3em;
+        display: inline-block;
+        text-transform: none;
+        float: left;
+        width: 40%;
+    }
+
+    header nav div > a {
+        width: 50%;
+        padding: 0;
+    }
+
+    header nav div.left,
+    header nav div.right {
+        min-width: 30%;
+    }
+
+    header nav div.left {
+        float: left;
+    }
+
+    header nav div.right {
+        float: right;
+    }
+
+    header nav div.left,
+    header nav div.right,
+    header nav h1 {
+        line-height: 80px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    header nav div > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        float: left;
+        color: #aaa;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+}
+
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    3. CONTENT
+    ......................................  */
+
+section.content {
+    padding-top: 3.5rem;
+
+}
+
+section.content section {
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+
+    section.welcome div.container,
+    section.welcome div.container div.pure-g,
+    section.welcome div.container div.pure-g div.pure-u-1  {
+        height: 100%;
+    }
+
+        section.welcome h2 {
+            font-size: 4rem;
+        }
+
+    section.welcome div.intro {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        float: right;
+    }
+
+        section.welcome div.intro > p {
+            font-weight: 300;
+            line-height: 1;
+            margin-top: 0;
+            text-transform: uppercase;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+            section.welcome div.intro > p span.celebrating {
+                font-size: 3.16rem;
+                line-height: 0;
+            }
+
+            section.welcome div.intro > p span.love {
+                font-weight: bold;
+                font-size: 8.4rem;
+            }
+
+            section.welcome div.intro > p span.date {
+                font-size: 3.44rem;
+            }
+
+            section.welcome div.intro > p span.place {
+                font-size: 3.26rem;
+            }
+
+        section.welcome div.intro > .pure-button {
+            font-size: 1.5rem;
+            font-weight: 300;
+            width: 340px;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+section.content > section {
+    padding: 2em 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section.content article {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+ul.gallery {
+    padding: 0;
+    list-style-type: none;
+}
+
+    ul.gallery li {
+        cursor: pointer;
+        position: relative;
+        width: 49%;
+        margin: 0 2% .5rem 0;
+        text-align: center;
+        float: left;
+    }
+
+    ul.gallery li:nth-child(2n+2) {
+        margin-right: 0;
+        clear: right;
+    }
+
+        ul.gallery li img {
+            border: .4rem solid #fff;
+            max-height: 193px;
+        }
+
+        ul.gallery li div.modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .7);
+            z-index: 9;
+        }
+
+        ul.gallery li div.modal img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            z-index: 10;
+            width: auto;
+            max-width: 90%;
+            height: auto;
+            max-height: 90%;
+        } 
+
+@media screen and (min-width: 0px) and (max-width: 35.5em) {
+    section.welcome div.intro {
+        margin: 0 auto;
+        float: none;
+    }
+    section.content > section {
+        padding: .5em 0 0;
+    }
+}
+
+@media screen and (min-width: 35.5em) {
+    section.content section.welcome {
+    background-image: url(../img/home.jpg);
+    min-width: 360px;
+    min-height: 360px;
+    padding: 0
+}
+
+    section.content section.story {
+        background-image: url(../img/story.jpg);
+    }
+
+    section.content section.details {
+        background-image: url(../img/details.jpg);
+    }
+
+    section.content section.photos {
+        background-image: url(../img/photos.jpg);
+    }
+    section.content section.story {
+        padding-bottom: 20em;
+    }
+    section.content section.details {
+        padding-bottom: 10em;
+    }
+    section.content section.photos {
+        padding-bottom: 10em;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    section.content {
+        padding: 0;
+        height: 100%;
+    }
+    ul.gallery li { 
+        width: 32%;
+        margin: 0 2% .5em 0;
+    }
+    ul.gallery li:nth-child(2n+2) {
+        margin-right: 2%;
+    }
+    ul.gallery li:nth-child(3n+3) {
+        clear: right;
+        margin-right: 0;
+    }
+        ul.gallery li img {
+            border-width: .5rem;
+        }
+}
+
+@media screen and (min-width: 64em) {
+    ul.gallery li { 
+        width: 23.5%;
+        margin: 0 2% 1em 0;
+    }
+    ul.gallery li:nth-child(2n+2),
+    ul.gallery li:nth-child(3n+3) {
+        margin-right: 2%;
+    }
+    ul.gallery li:nth-child(4n+4) {
+        clear: right;
+        margin-right: 0;
+    }
+        ul.gallery li img {
+            border-width: .5rem;
+        }
+}
+
+@media screen and (min-width: 80em) {
+    section.welcome div.intro {
+        margin-right: 8rem;
+    }
+}

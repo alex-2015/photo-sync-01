@@ -1,0 +1,916 @@
+/* over 768px */
+@media screen and (min-width: 48em) {
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		GLOBAL
+	    ....................................  */
+	html, body {
+		overflow: hidden;
+	}
+
+
+	
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Menu
+	    ....................................  */
+
+	button.fixed {
+		width: 68px;
+		height: 62px;
+		line-height: 62px;
+	}
+
+	button.belief + div.belief-tooltip {
+		top: 0;
+		right: 68px;
+	}
+
+		button.belief + div.belief-tooltip p {
+			height: 62px;
+			line-height: 62px;
+		}
+
+	nav#main-nav {
+		bottom: auto;
+	}
+
+	nav#main-nav h2 {
+		padding-left: 72px;
+	}
+
+	nav#main-nav h2 a {
+		height: 62px;
+		line-height: 62px;
+	}
+
+	nav#main-nav h2 a,
+	nav#main-nav div.main-nav-content {
+		background: rgba(0, 0, 0, .75);
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		All Stages
+	    ....................................  */
+
+	#container {
+	}
+
+	div.stage {
+		position: absolute;
+		width: 100%;
+		display: block;
+		overflow: hidden;
+	}
+
+	.mobilecheck {
+		position: relative;
+	    z-index: 0; 
+	}
+
+	.lets-create {
+		display: none;
+	}
+
+	div.modal div.wrapper {
+		font-size: 1.5rem;
+	}
+
+	div.modal div.normal-wrapper {
+		height: 68%;
+		width: 90%;
+	}
+
+	/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+		Modal Box
+	    ....................................  */
+
+	div.modal.belief-modal {
+		overflow-y: auto;
+	}
+
+	div.modal.belief-modal div.wrapper {
+		font-size: 3.75rem;
+		padding: 0 1.5rem;
+	}
+
+		div.modal.belief-modal div.wrapper h3.title {
+			display: none;
+		}
+
+		div.modal.clients-modal ul.clients li.col-1 {
+			-webkit-animation-delay: .4s;
+			animation-delay: .4s;
+		}
+
+		div.modal.clients-modal ul.clients li.col-2 {
+			-webkit-animation-delay: .8s;
+			animation-delay: .8s;
+		}
+
+		div.modal.clients-modal ul.clients li.col-3 {
+			-webkit-animation-delay: 1.2s;
+			animation-delay: 1.2s;
+		}
+
+		div.modal.clients-modal ul.clients li.col-4 {
+			-webkit-animation-delay: 1.6s;
+			animation-delay: 1.6s;
+		}
+
+		div.modal.clients-modal ul.clients li.col-5 {
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+		}
+
+		div.clients-modal ul.clients li.lets-create {
+			display: none;
+		}
+
+			div.modal.clients-modal ul.clients li img {
+				-ms-transform: scale(1);
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transition: -webkit-transform .5s ease;
+				transition: transform .5s ease;
+			}
+
+			div.modal.clients-modal ul.clients li img:hover {
+				-ms-transform: scale(1.1);
+			    -webkit-transform: scale(1.1);
+			    transform: scale(1.1);
+			}
+
+			div.modal.clients-modal ul.clients li.tutorall img {
+				-ms-transform: scale(.7);
+				-webkit-transform: scale(.7);
+				transform: scale(.7);
+			}
+
+			div.modal.clients-modal ul.clients li.tutorall img:hover {
+				-ms-transform: scale(.8);
+				-webkit-transform: scale(.8);
+				transform: scale(.8);
+			}
+
+			div.modal.clients-modal ul.clients li.merrill img {
+				-ms-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+
+			div.modal.clients-modal ul.clients li.merrill img:hover {
+				-ms-transform: scale(1.3);
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			div.modal.clients-modal ul.clients li.exptrips img {
+				-ms-transform: scale(.8);
+				-webkit-transform: scale(.8);
+				transform: scale(.8);
+			}
+
+			div.modal.clients-modal ul.clients li.exptrips img:hover {
+				-ms-transform: scale(.9);
+				-webkit-transform: scale(.9);
+				transform: scale(.9);
+			}
+
+			div.modal.clients-modal ul.clients li.tripleader img {
+				-ms-transform: scale(1.3);
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			div.modal.clients-modal ul.clients li.tripleader img:hover {
+				-ms-transform: scale(1.4);
+				-webkit-transform: scale(1.4);
+				transform: scale(1.4);
+			}
+
+			div.modal.clients-modal ul.clients li.forever-kid img {
+				-ms-transform: scale(.5);
+				-webkit-transform: scale(.5);
+				transform: scale(.5);
+			}
+
+			div.modal.clients-modal ul.clients li.forever-kid img:hover {
+				-ms-transform: scale(.6);
+				-webkit-transform: scale(.6);
+				transform: scale(.6);
+			}
+
+	div.modal.photos-modal div.wrapper header {
+		margin-top: 0;
+	}
+
+	div.modal.photos-modal div.wrapper header * {
+		font-size: 3.25rem;
+	}
+
+	div.modal.photos-modal div.wrapper header p {
+		font-size: 1.5rem;
+	}
+
+	div.modal.photos-modal div.wrapper > p {
+		font-size: 2rem;
+	}
+
+
+
+    /*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 1
+	    ....................................  */
+
+	.home-video {
+		display: block;
+	}
+
+	#main {
+		height: 100%;
+		position: absolute;
+		top:0;
+		bottom:0;
+		right: 0;
+		left: 0;
+		background: #222 url(../img/home/bg-home.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	#main {
+		background: none;
+	}
+
+	#main #content {
+		background: none;
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+	}
+
+	#vibrancy-studios h1 {
+		padding-top: 1.5rem;
+		font-size: 9.5rem;
+		letter-spacing: 2px;
+	}
+
+	#vibrancy-studios h2 {
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+	}
+
+	#vibrancy-family {
+		font-size: 3.5rem;
+	}
+
+		#vibrancy-family p {
+			margin: 0 auto;
+			max-width: 900px;
+			padding: 0;
+		}
+
+	#slideshow-services {
+		display: block;
+		height: 256px;
+	}
+
+	#marker-4 {
+		display: inline-block; 
+	}
+
+	div#vibrancy-clients p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+	}
+
+	ul.clients li {
+		width: 16%;
+				height: 100%;
+				float: left;
+				max-height: 80px;
+				line-height: 100px;
+		display: block;
+		margin: 0 4% 1.5rem 0;
+	}
+
+	div.modal.clients-modal p {
+		margin-bottom: 3rem;
+	}
+
+	div.modal.clients-modal ul.clients li {
+		height: 80px;
+		line-height: 80px;
+		margin-bottom: 3.5rem;
+	}
+
+	ul.clients li:nth-child(5n+1) {
+		clear: left;
+	}
+
+	ul.clients li:nth-child(5n+5) {
+		margin-right: 0;
+	}
+
+	ul.clients li:nth-child(n+11) {
+		margin-bottom: 0;
+	}
+
+	ul.clients li a {
+		display: inline-block;
+		/*display: block;*/
+		/*height: 100%;*/
+	}
+
+	ul.clients li.square,
+	div#vibrancy-clients-mobile ul li.square {
+		line-height: 80px;
+		max-height: 100px;
+		height: 100px;
+	}
+
+		ul.clients li.square a,
+		div#vibrancy-clients-mobile ul li.square a {
+			max-height: none;
+			width: auto;
+			height: 100%;
+		}
+
+			ul.clients li.square a img,
+			div#vibrancy-clients-mobile ul li.square a img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+	ul.clients li.universe,
+	div#vibrancy-clients-mobile ul li.universe {
+		line-height: 110px;
+	}
+
+	#navbar {
+		z-index: 2;
+		font-weight: 200;
+		position: absolute;
+		top: auto;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+		#navbar div.service {
+			width: 20%;
+			float: left;
+		}
+
+			#navbar div.service a {
+				text-align: center;
+				height: 200px;
+				line-height: 200px;
+				font-weight: 300;
+				letter-spacing: 1px;
+				font-size: 1.5rem;
+			}
+
+	#vibrancy-clients-mobile {
+		display: none;
+	}
+
+
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 2 - Logos
+	    ....................................  */
+	div.stage-slider .slides-navigation,
+	div.stage-slider .slides-pagination  {
+		display: block;
+	}
+
+	div.stage-slider ul.slides-container,
+	div.stage-slider ul.slides-container > li,
+	div.stage-slider div.slides-control {
+		height: 100%;
+	}
+
+	div.stage-slider ul.slides-container > li {
+		width: 100%;
+		display: inline-block;
+	}
+
+	div.panel {
+		width: 50%;
+		height: 50%;
+	}
+
+		div.panel div div.copy header h3 {
+			font-size: 3rem;
+		}
+
+		div.panel div div.copy header p {
+			font-size: 1.5rem;
+		}
+
+	div.panel.logos-1 div.front span.logo {
+		background-size: auto 60%;
+	}
+
+	div.panel.logos-2 div.front span.logo {
+		background-size: auto 40%;
+	}
+
+	div.panel.logos-3 div.front span.logo {
+		background-size: auto 40%;
+	}
+
+	div.panel.logos-4 div.front span.logo {
+		background-size: auto 21%;
+	}
+
+	div.panel.logos-5 div.front span.logo {
+		background-size: auto 50%;
+	}
+
+	div.panel.logos-6 div.front span.logo {
+		background-size: auto 38%;
+	}
+
+	div.panel.logos-7 div.front span.logo {
+		background-size: auto 50%;
+	}
+
+	div.panel.logos-8 div.front span.logo {
+		background-size: auto 65%;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 3 - Meet the Family
+	    ....................................  */
+
+	#family li.member.expanded {
+		width: 620px;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+	    Stage 4 - Apps
+	    ....................................  */
+
+	.stage-apps div.viewport {
+		height: 100%;
+		overflow: hidden;
+	}
+
+		.stage-apps div.viewport section p.click-anywhere,
+		.stage-apps ul.pagination {
+			display: block;
+		}
+
+		.stage-apps div.viewport section p {
+			font-size: 3rem;
+		}
+
+		.stage-apps div.viewport section [data-id="1-1"] {
+			left: 13%;
+			max-width: 57%;
+			font-size: 3rem;
+		}
+
+		.stage-apps div.viewport section [data-id="1-2"] {
+			right: 10%;
+			max-width: 33%;
+		}
+
+		.stage-apps div.viewport section [data-id="2-1"] {
+			bottom: 75%;
+		}
+
+		.stage-apps div.viewport section [data-id="2-2"],
+		.stage-apps div.viewport section [data-id="2-4"] {
+			max-height: 70%;
+		}
+
+		.stage-apps div.viewport section [data-id="2-2"] {
+			left: 20%;
+		}
+
+		.stage-apps div.viewport section [data-id="2-3"] {
+			max-height: 66%;
+		}
+
+		.stage-apps div.viewport section [data-id="2-4"] {
+			right: 20%;
+		}
+
+		.stage-apps div.viewport section [data-id="4-2-3"] {
+			font-size: 2rem;
+		}
+
+
+		.stage-apps div.viewport section [data-id="4-1"],
+		.stage-apps div.viewport section [data-id="4-4"] {
+			top: 0;
+			bottom: 0;
+			max-width: 16%;
+		}
+
+
+		.stage-apps div.viewport section [data-id="4-2-3"] {
+			max-width: 100%;
+			max-height: 500px;
+		}
+
+		.stage-apps div.viewport section [data-id="4-2"],
+		.stage-apps div.viewport section [data-id="4-3"] {
+			display: block;
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 3rem;
+			padding: 0 1rem;
+		}
+
+		.stage-apps div.viewport section [data-id="4-2"] {
+			top: 0;
+			left: 0;
+		}
+
+		.stage-apps div.viewport section [data-id="4-3"] {
+			top: 0;
+			right: 0;
+			-webkit-animation-delay: 1s;
+			animation-delay: 1s;
+		}
+
+		.stage-apps div.viewport section [data-id="5-1"] {
+			width: 55%;
+		}
+
+		.stage-apps div.viewport section [data-id="5-2"] {
+			font-size: 3rem;
+			text-align: right;
+			padding: 0;
+			max-width: 80%;
+			right: 5%;
+			left: auto;
+		}
+
+		.stage-apps div.viewport section [data-id="6-1"] {
+			font-size: 3rem;
+		}
+
+		.stage-apps div.viewport section [data-id="6-2"] {
+			font-size: 1.5rem;
+		}
+
+		.stage-apps div.viewport section [data-id="7-3"] {
+			max-height: 50%;
+		}
+
+		.stage-apps div.viewport section [data-id="8-1"] {
+			bottom: 75%;
+			font-size: 2rem;
+		}
+
+		.stage-apps div.viewport section [data-id="8-2"] {
+			bottom: 62%;
+		}
+
+		.stage-apps div.viewport section [data-id="8-3"],
+		.stage-apps div.viewport section [data-id="8-4"],
+		.stage-apps div.viewport section [data-id="8-6"],
+		.stage-apps div.viewport section [data-id="8-7"] {
+			max-width: 20%;
+		}
+
+		.stage-apps div.viewport section [data-id="8-3"] {
+			left: 17%;
+		}
+
+		.stage-apps div.viewport section [data-id="8-4"] {
+			left: 27%;
+		}
+
+		.stage-apps div.viewport section [data-id="8-5"] {
+			width: 29%;
+			max-width: 440px;
+		}
+
+		.stage-apps div.viewport section [data-id="8-6"] {
+			right: 27%;
+
+		}
+
+		.stage-apps div.viewport section [data-id="8-7"] {
+			right: 17%;
+		}
+
+
+	
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+	Stage 5 - Photos
+    ....................................  */
+
+    div.panel div div.overlay {
+		background: rgba(0,0,0,0);
+		-webkit-transition: all .3s linear;
+		transition: all .3s linear;
+	}
+
+	div.panel:hover div.front div.overlay {
+		background-color: rgba(0,0,0,.15);
+		-webkit-transition: all .3s linear;
+		transition: all .3s linear;
+	}
+
+	div.stage-photos div.panel {
+		height: 100%;
+	}
+
+	div.panel.photos-4:hover div.front div.overlay {
+		background-color: rgba(0,0,0,.15);
+	}
+
+	div.panel.photos-5:hover div.front div.overlay {
+		background-color: rgba(0,0,0,.15);
+	}
+
+	.stage-photos div.panel div div.copy header h3 {
+		font-size: 2.55rem;
+	}
+
+	.stage-photos div.panel[data-modal-trigger="photos-olympics"] div div.copy header h3 span {
+		font-size: 1.8rem;
+	}
+
+	.stage-photos div.panel div div.copy header p {
+		font-size: 1.07rem;
+	}
+
+	div.press-logos {
+		position: absolute;
+		bottom: 2%;
+		left: 50%;
+		background: none;
+		z-index:83;
+		float: none;
+		width: 90%;
+		max-width: 1200px;
+		padding: 1.5rem 0;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+
+		div.press-logos.tablet-paused p, 
+		div.press-logos.tablet-paused ul li {
+			-webkit-animation-play-state: paused;
+			animation-play-state: paused;
+		}
+
+			div.press-logos p {
+				padding: 0;
+				line-height: 2;
+				margin: 0 0 2.25rem;
+				font-size: 1.25rem;
+			}
+
+				div.press-logos ul li {
+					display: inline-block;
+					min-width: 17%;
+					max-width: 17%;
+					margin: 0 1.5%;
+					text-align: center;
+					height: 40px;
+					position: relative;
+				}
+
+				div.press-logos ul li:last-child {
+					margin-right: 0;
+				}
+
+					div.stage-websites div.press-logos ul li img {
+						max-height: 34px;
+					}
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 6 - Websites
+	    ....................................  */
+
+	div.stage-websites div.panel {
+		height: 100%;
+	}
+
+		div.stage-websites div.panel div div.copy header h3 span {
+			font-size: 2rem;
+			display: block;
+		}
+
+		div.stage-websites div.panel div div.copy header h3 {
+			font-size: 2.7rem;
+			line-height: 1.1;
+		}
+
+		div.stage-websites div.panel div div.copy header p {
+			padding: 0 1rem;
+			font-size: .8rem;
+			letter-spacing: .18rem;
+			max-width: 580px;
+			margin: 0 auto;
+		}
+
+	div.panel.websites-4 div.front div.copy header h3 span {
+		display: inline;
+		font-size: 2rem;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 7 - Videos
+	    ....................................  */
+
+	div.panel.videos-1,
+	div.panel.videos-2,
+	div.panel.videos-3,
+	div.panel.videos-4 {
+		width: 100%;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 8 - Join the Family
+	    ....................................  */
+
+	.stage-joinfamily .mini-slider ul:first-of-type {
+		font-size: 2rem;
+	}
+
+	.stage-joinfamily .mini-slider ul:first-of-type li {
+		position: relative;
+		top: 50%;
+		transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		-webkit-transform: translate(0, -50%);
+	}
+
+	.stage-joinfamily .mini-slider ul:first-of-type li .row-creative {
+		width: 100%;
+	}
+
+	.stage-joinfamily .mini-slider ul:first-of-type li .row-creative .icon-group {
+		width: 16.66%;
+	}
+
+	.stage-joinfamily .mini-slider ul:first-of-type li .row-creative .icon-group:nth-child(4) {
+		clear: none;
+	}
+
+
+
+	/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		Stage 9 - Clients
+	    ....................................  */
+
+
+	div.stage-clients {
+		overflow-y: auto;
+	}
+
+		div.stage-clients div.wrapper {
+			margin-top: 3rem;
+			/*height: 80%;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);*/
+		}
+
+	div.stage-clients ul.clients li.col-1 {
+			-webkit-animation-delay: .4s;
+			animation-delay: .4s;
+		}
+
+		div.stage-clients ul.clients li.col-2 {
+			-webkit-animation-delay: .8s;
+			animation-delay: .8s;
+		}
+
+		div.stage-clients ul.clients li.col-3 {
+			-webkit-animation-delay: 1.2s;
+			animation-delay: 1.2s;
+		}
+
+		div.stage-clients ul.clients li.col-4 {
+			-webkit-animation-delay: 1.6s;
+			animation-delay: 1.6s;
+		}
+
+		div.stage-clients ul.clients li.col-5 {
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+		}
+
+		div.stage-clients ul.clients li.lets-create {
+			display: none;
+		}
+
+			div.stage-clients ul.clients li img:not(.no-scale) {
+				-ms-transform: scale(1);
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+
+			div.stage-clients ul.clients li img {
+				-ms-transform: scale(1);
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transition: -webkit-transform .5s ease;
+				transition: transform .5s ease;
+			}
+
+			div.stage-clients ul.clients li img:hover {
+				-ms-transform: scale(1.1);
+			    -webkit-transform: scale(1.1);
+			    transform: scale(1.1);
+			}
+
+			div.stage-clients ul.clients li.tutorall img {
+				-ms-transform: scale(.7);
+				-webkit-transform: scale(.7);
+				transform: scale(.7);
+			}
+
+			div.stage-clients ul.clients li.tutorall img:hover {
+				-ms-transform: scale(.8);
+				-webkit-transform: scale(.8);
+				transform: scale(.8);
+			}
+
+			div.stage-clients ul.clients li.merrill img {
+				-ms-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+
+			div.stage-clients ul.clients li.merrill img:hover {
+				-ms-transform: scale(1.3);
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			div.stage-clients ul.clients li.exptrips img {
+				-ms-transform: scale(.8);
+				-webkit-transform: scale(.8);
+				transform: scale(.8);
+			}
+
+			div.stage-clients ul.clients li.exptrips img:hover {
+				-ms-transform: scale(.9);
+				-webkit-transform: scale(.9);
+				transform: scale(.9);
+			}
+
+			div.stage-clients ul.clients li.tripleader img {
+				-ms-transform: scale(1.3);
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			div.stage-clients ul.clients li.tripleader img:hover {
+				-ms-transform: scale(1.4);
+				-webkit-transform: scale(1.4);
+				transform: scale(1.4);
+			}
+
+			div.stage-clients ul.clients li.forever-kid img {
+				-ms-transform: scale(.5);
+				-webkit-transform: scale(.5);
+				transform: scale(.5);
+			}
+
+			div.stage-clients ul.clients li.forever-kid img:hover {
+				-ms-transform: scale(.6);
+				-webkit-transform: scale(.6);
+				transform: scale(.6);
+			}
+
+			/*div.stage-clients p {
+				margin-bottom: 3rem;
+			}*/
+
+	div.stage-clients ul.clients li {
+		height: 80px;
+		line-height: 80px;
+		margin-bottom: 3.5rem;
+		
+	}
+
+
+}

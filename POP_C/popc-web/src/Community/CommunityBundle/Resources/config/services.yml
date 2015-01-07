@@ -1,0 +1,7 @@
+parameters:
+#    community_community.example.class: Community\CommunityBundle\Example
+
+services:
+#    community_community.example:
+#        class: %community_community.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

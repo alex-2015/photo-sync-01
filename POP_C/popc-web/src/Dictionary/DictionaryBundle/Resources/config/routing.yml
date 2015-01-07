@@ -1,0 +1,7 @@
+dictionary_dictionary_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: DictionaryDictionaryBundle:Default:index }
+
+dictionary_dictionary_index:
+    pattern: /dictionary
+    defaults: { _controller: DictionaryDictionaryBundle:Default:dictionaryManager }

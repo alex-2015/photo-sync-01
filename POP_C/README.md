@@ -1,0 +1,4 @@
+POP_C
+=====
+
+POP C is an API which takes a string and an array of user preference as inputs and transform the words of the string according to user preference. API will return a 'image/png' format image which makes sure that the content will not be deformed when displayed to user. Because the return type is an image no Unicode support nor Font file installation will be required. People from all over the world can create their own dictionaries which are using their native fonts and share it among their community. POP C will make sure people enjoy the text content without being affected by the device or the language they use.

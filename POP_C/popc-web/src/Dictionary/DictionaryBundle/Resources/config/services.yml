@@ -1,0 +1,7 @@
+parameters:
+#    dictionary_dictionary.example.class: Dictionary\DictionaryBundle\Example
+
+services:
+#    dictionary_dictionary.example:
+#        class: %dictionary_dictionary.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

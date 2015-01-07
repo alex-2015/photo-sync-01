@@ -1,0 +1,397 @@
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    TABLE OF CONTENTS
+
+    1. Global
+        ├─ 1.1 Typography
+        └─ 1.2 Everything Else
+    2. Main Menu
+    3. Header
+    4. Work - Home
+    5. About
+    6. Footer
+    7. Work - Piece
+
+    ..................................  */
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    1. GLOBAL
+    ..................................  */
+html,
+button,
+input,
+select,
+textarea {
+    color: #585858;
+}
+html {
+    font: 20px/1.5 'solomon-light', sans-serif;
+    -webkit-font-feature-settings:"calt", "liga", "clig", "kern", "dlig";
+    -moz-font-feature-settings:"calt=1, liga=1, clig=1, kern=1, dlig=1";
+    -moz-font-feature-settings:"calt" 1, "liga" 1, "clig" 1, "kern" 1, "dlig" 1;
+    font-feature-settings:"calt", "liga", "clig", "kern", "dlig";
+    background: #fafafa;
+}
+body {
+}
+
+/*  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    1.1 Typography
+    ..................................  */
+@font-face {
+    font-family: 'solomon-normal';
+    src: url('../fonts/solomon_normal-webfont.eot');
+    src: url('../fonts/solomon_normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/solomon_normal-webfont.woff') format('woff'),
+         url('../fonts/solomon_normal-webfont.ttf') format('truetype'),
+         url('../fonts/solomon_normal-webfont.svg#solomon_normalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'solomon-light';
+    src: url('../fonts/solomon_light-webfont-webfont.eot');
+    src: url('../fonts/solomon_light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/solomon_light-webfont-webfont.woff') format('woff'),
+         url('../fonts/solomon_light-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/solomon_light-webfont-webfont.svg#solomon_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'solomon-black-deco';
+    src: url('../fonts/solomon_black_deco-webfont.eot');
+    src: url('../fonts/solomon_black_deco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/solomon_black_deco-webfont.woff') format('woff'),
+         url('../fonts/solomon_black_deco-webfont.ttf') format('truetype'),
+         url('../fonts/solomon_black_deco-webfont.svg#solomon_black_decoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'solomon-black';
+    src: url('../fonts/solomon_black-webfont.eot');
+    src: url('../fonts/solomon_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/solomon_black-webfont.woff') format('woff'),
+         url('../fonts/solomon_black-webfont.ttf') format('truetype'),
+         url('../fonts/solomon_black-webfont.svg#solomon_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=3.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'), 
+  url('../fonts/fontawesome-webfont.woff?v=3.1.0') format('woff'), 
+  url('../fonts/fontawesome-webfont.ttf?v=3.1.0') format('truetype'), 
+  url('../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.glyph {
+    font-family: 'FontAwesome';
+}
+.deco {
+    font-family: 'solomon-black-deco';
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'solomon-normal';
+    font-weight: normal;
+    line-height: 1.5;
+}
+h1, h2 {
+    letter-spacing: -1px;
+}
+h1 {
+    font-family: 'solomon-black';
+}
+p, ol, ul, blockquote, pre, code {
+    margin: 0 0 1.5em 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #d9510e;
+    border-bottom: 1px dashed #d9510e;
+    outline: 0;
+}
+a:focus, a:active {
+    outline: 0;
+}
+a:hover {
+    color: #f9702d;
+    border-color: #f9702d;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+a.visit {
+    cursor: pointer;
+    background: #34495e;
+    outline: 0;
+    border: 0;
+    color: #ecf0f1;
+    padding: .5em 1em;
+    border-radius: 3px;
+    font: .75em 'solomon-light';
+    text-transform: uppercase;
+}
+a.visit:hover {
+    background: #7f8c8d;
+    border: none;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+@media screen and (min-width: 0px) and (max-width: 739px) {
+    h2 {
+        font-size: 1.5em;
+    }
+}
+/*  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    1.2 Everything Else
+    ..................................  */
+button:focus {
+    outline: 0;
+}
+a.no-format {
+    font-weight: normal;
+    color: inherit;
+    border: 0;
+}
+a.button {
+    font-size: .83em;
+    border: 1px solid #d9510e;
+    padding: .5em .75em;
+    border-radius: .5em;
+}
+a.button.disabled,
+a.button.disabled:hover {
+    border-color: #ccc;
+    color: #ccc;
+    pointer-events: none;
+    cursor: default;
+}
+a.button:hover {
+    background: #fe7634;
+    color: #f9f9f9;
+}
+img {
+    max-width: 100%;
+    -webkit-box-shadow: none; /* mezzanine reset */
+    box-shadow: none; /* mezzanine reset */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 auto 2.5em;
+    padding: 0;
+}
+ul.no-bullet {
+    list-style-type: none;
+    padding: 0;
+}
+.stilts {
+    margin-bottom: 1.5em;
+}
+.haircut {
+    margin-top: 0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    2. Main Menu
+    ..................................  */
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fefefe;
+    -webkit-box-shadow: 0 0 4px 0 #ccc;
+    box-shadow: 0 0 4px 0 #ccc;
+    z-index: 9;
+}
+header a {
+    border: 0;
+}
+header button.mobile-menu {
+    display: none;
+    background: none;
+    border: 0;
+    line-height: 56px;
+    height: 56px;
+    width: 56px;
+    padding: 0 .7em;
+}
+header button.mobile-menu span.mobile-icon {
+    width: 100%;
+    height: .25em;
+    background: #d9510e;
+    display: block;
+    z-index: 9;
+    margin-bottom: .2em;
+    border-radius: 2px;
+}
+header button.mobile-menu span.mobile-icon:last-child {
+    margin-bottom: 0;
+}
+header button.mobile-menu:hover span.mobile-icon {
+    background: #f9702d;
+}
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+header a.brand-app {
+    font: 1.5em 'solomon-black';
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: inherit;
+    float: left;
+    line-height: 42px;
+}
+header img.logo {
+    height: 56px;
+    margin-right: .1em;
+    height: 1em;
+    margin: .2em .1em .2em 0;
+    float: left;
+
+}
+header nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header nav > ul li {
+    float: left;
+    height: 56px;
+}
+header nav > ul li a {
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #333;
+    padding: .25em .75em;
+    line-height: 56px;
+}
+header nav > ul li a:hover {
+    color: #d9510e;
+}
+header nav > ul li:last-child a {
+    padding-right: 0;
+}
+@media screen and (min-width: 0px) and (max-width: 739px) {
+    header button.mobile-menu {
+        display: inline-block;
+        float: right;
+    }
+    header img.logo {
+        margin-left: .25em;
+    }
+    header nav > ul {
+        float: none;
+        background: #222;
+    }
+    header nav > ul li {
+        float: none;
+        text-align: center;
+    }
+    header nav > ul li a {
+        font-size: 1em;
+        padding: 0;
+        width: 100%;
+        color: #fff;
+        display: block;
+    }
+}
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    Body
+    ..................................  */
+.grid-sizer {
+    width: 33%;
+}
+.gutter-sizer {
+    width: .5%;
+}
+div.image-block {
+    width: 33%;
+    text-align: center;
+    margin-bottom: .25em;
+}
+div.image-block img {
+    display: block;
+}
+div.image-block a {
+    border: none;
+    display: block;
+    overflow: hidden;
+}
+div.image-block.cover {
+    float: left;
+    margin-left: .5%;
+}
+div.image-block.cover:nth-child(3n+1) {
+    margin-left: 0;
+}
+div.image-block.cover a { 
+    height: 300px; /*jQuery fallback*/
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+div.image-block h5 {
+    margin: .25em 0;
+}
+@media screen and (min-width: 0px) and (max-width: 739px) {
+    div.image-block {
+        width: 49.5%;
+    }
+    div.image-block.cover {
+        margin-left: 1%;
+    }
+    div.image-block.cover:nth-child(3n+1) {
+        margin-left: 1%;
+    }
+    div.image-block.cover:nth-child(2n+1) {
+        margin-left: 0;
+    }
+    .grid-sizer {
+        width: 49.5%;
+    }
+    .gutter-sizer {
+        width: 1%;
+    }
+}
+
+
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    6. Footer
+    ..................................  */
+footer {
+    width: 100%;
+    /*background: #72706d;*/
+    /*color: #fff;*/
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+footer p {
+    text-align: center;
+    font-size: .75em;
+    margin: 1.5em 0;
+}

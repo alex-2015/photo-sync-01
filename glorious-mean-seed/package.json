@@ -1,0 +1,19 @@
+{
+  "name": "glorious-mean-seed",
+  "author": "John Murphy",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "morgan": "*",
+    "method-override": "*",
+    "express-session": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "connect-flash": "*",
+    "bcrypt-nodejs": "*"
+  },
+  "main": "server.js"
+}

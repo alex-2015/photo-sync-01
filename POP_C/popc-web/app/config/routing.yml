@@ -1,0 +1,16 @@
+file_file:
+    resource: "@FileFileBundle/Resources/config/routing.yml"
+    prefix:   /
+
+community_community:
+    resource: "@CommunityCommunityBundle/Resources/config/routing.yml"
+    prefix:   /
+
+dictionary_dictionary:
+    resource: "@DictionaryDictionaryBundle/Resources/config/routing.yml"
+    prefix:   /
+
+login_login:
+    resource: "@LoginLoginBundle/Resources/config/routing.yml"
+    prefix:   /
+

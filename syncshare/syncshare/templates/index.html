@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load imagefit %}
+{% block photos %}
+{% if albums %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col span_24">
+        <h2>Photo Albums</h2>
+      </div>
+    </div>
+    <div class="row multiple">
+      {% for album in albums %}
+      <div class="image-block cover">
+        {% with album.picture_set.all|first as picture %}
+          <a href="/albums/{{ album.slug }}" style="background-image: url('{{ picture.path|resize:'400x400' }}')">&nbsp;</a>
+        {% endwith %}
+        <h5>{{ album.name }}</h5>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

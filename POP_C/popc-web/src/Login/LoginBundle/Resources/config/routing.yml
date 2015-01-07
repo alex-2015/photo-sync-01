@@ -1,0 +1,15 @@
+login_login_homepage:
+    pattern:  /
+    defaults: { _controller: LoginLoginBundle:Default:index }
+
+login_login_signup:
+    pattern:  /signup
+    defaults: { _controller: LoginLoginBundle:Default:signup }
+    
+login_login_logout:
+    pattern:  /logout
+    defaults: { _controller: LoginLoginBundle:Default:logout }
+    
+login_login_settings:
+    pattern:   /settings
+    defaults: { _controller: LoginLoginBundle:Default:settings }
